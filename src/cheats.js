@@ -45,5 +45,22 @@ window.cheats = {
 
   learn: () => {
     spelcode.forEach(learnSpell)
+  },
+
+  buff: () => {
+      // bonuses
+    player.MOREDEFENSES = 999999;
+    player.STREXTRA = 999999;
+    player.GIANTSTR = 999999;
+    player.HERO = 999999;
+    player.COKED = 999999; // ULARN
+    player.AWARENESS = 999999;
+    player.SEEINVISIBLE = 999999;
+    player.SPIRITPRO = 999999;
+    player.UNDEADPRO = 999999;
+    player.FIRERESISTANCE = 999999;
+    player.STEALTH = 999999;
+    player.LIFEPROT = 999999;
+    player.MOREDAM = 999999; // not sure this does anything
   }
 }

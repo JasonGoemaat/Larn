@@ -1,5 +1,38 @@
-# JS LARN Version 12.5.0
+# VITE LARN Version 12.6.0
 
+Changes for Vite from https://github.com/primeau/Larn/
+
+Building and running is standard vite.  To run locally:
+
+```
+npm i
+npm run dev
+```
+
+Changes from JS LArn 12.5.0:
+
+* Moved static files from `/src` to `/public`
+* Added `cheats.js` with global cheats object (use from browser console)
+  * reveal() - reveal map
+  * time() - reset game time to 0 to give you time
+  * money() - give yourself a million gold
+  * decurse() - remove negative effects
+  * learn() - learn all spells
+  * stats() - give yourself high stats, hp, spells
+  * buffs() - give yourself permanent positive buffs
+  * god() - toggle `player.GOD` which does quite a bit, reset after load
+* Removed some hoky 'compression' that happens when saving the game, it never worked locally
+* You can now 'S' to save the game at any time, and it doesn't get removed so you can reload if you die
+* Disable 'hasPickedUpPotion' check at store, doesn't make sense to me.  I was surprised by this because
+I was on a deep dive and had full inventory when I found the potion so I had to drop something to get
+it.   Why make me go all the way out to sell stuff and come back for the potion?  I don't care about
+score anyway really since I don't play the online version, it was just annoying and I think dumb.
+
+---
+
+# Original README from JS LARN 12.5.0
+
+---
 
 ## Play Online
 [You can play Larn online at larn.org](https://larn.org "You can play Larn online here")

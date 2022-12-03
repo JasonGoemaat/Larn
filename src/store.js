@@ -603,11 +603,11 @@ function parse_tradepost(key) {
   prevent players from selling things once they have found the potion
   to prevent them from racking up the scoreboard
   */
-  if (player.hasPickedUpPotion) {
-    storemessage(`Sorry friend, the shop is closed. It's time to go home now.`, 1500);
-    //nap(2000);
-    return 0;
-  }
+  // if (player.hasPickedUpPotion) {
+  //   storemessage(`Sorry friend, the shop is closed. It's time to go home now.`, 1500);
+  //   //nap(2000);
+  //   return 0;
+  // }
 
   if (i >= 0 && i <= 26) {
     var item = player.inventory[i];
